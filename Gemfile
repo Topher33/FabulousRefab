@@ -27,10 +27,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'bcrypt', '~> 3.1.7'
 
 #spree
-gem 'spree', '~> 3.1.0'
-gem 'spree_auth_devise', '~> 3.1.0'
-gem 'spree_gateway', '~> 3.1.0'
-# gem 'spree_chimpy'
+gem 'spree'
+gem 'spree_auth_devise'
+gem 'spree_gateway'
+gem 'spree_chimpy', git: "https://github.com/DynamoMTL/spree_chimpy.git", branch: '3-stable'
+gem 'spree_mail_settings', git: 'https://github.com/spree-contrib/spree_mail_settings.git', branch: '3-1-stable'
 # gem 'spree_slider', github: 'spree-contrib/spree_slider', branch: '3-0-stable'
 
 # Use Unicorn as the app server
@@ -52,4 +53,3 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
